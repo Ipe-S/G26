@@ -1,0 +1,237 @@
+
+:root {
+    --mdc-theme-primary: #6200ee;
+    --mdc-theme-secondary: #03dac6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.margencero{
+  margin: 0; 
+  display: inline; 
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 20%;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+
+.top-bar {
+    padding: 10px 5%;  
+}
+
+
+.parrafoborder {
+  margin: 0; 
+  color: white;
+  font-size: 2rem;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+.container {
+    max-width: 1000px;
+    margin: -50px auto 40px;
+    padding: 0 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header-profile {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+h1.parrafoborder {
+    font-size: 2.5rem;
+}
+.header-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../img/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.profile-container {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid white; 
+    object-fit: cover; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.mdc-card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 6px; 
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-chip {
+    background: #e0e0e0;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 16px;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.badges-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+    justify-items: center;
+}
+
+.badges-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.badges-container img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.badges-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.badge-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center; 
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.badges-container::-webkit-scrollbar {
+    height: 6px;
+}
+.badges-container::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.float-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #0077b5;
+  color: white;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.float-fab:hover {
+  transform: scale(1.1); 
+  background-color: #005582;
+}
+
+
+.mdc-fab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  text-decoration: none;
+}
